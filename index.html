@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bhuvish Mahadeva's portfolio: computer science and cybersecurity at Iowa State University, cloud infrastructure, security automation, and software development.">
+  <meta name="theme-color" content="#f6f4ee">
+  <title>Bhuvish Mahadeva | Portfolio</title>
+  <!-- External CSS: the main stylesheet. -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Internal CSS: included to demonstrate the Activity 04 requirement. -->
+  <style>
+    .container { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+    .project { border: 1px solid #d9d7cd; border-radius: 8px; overflow: hidden; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="#about" aria-label="Bhuvish Mahadeva, home">BM<span>.</span></a>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="about" class="hero container" aria-labelledby="name">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> COMPUTER SCIENCE · CYBERSECURITY</p>
+        <h1 id="name">Bhuvish<br>Mahadeva<span class="accent">.</span></h1>
+        <!-- Inline CSS: the third CSS placement demonstrated in Activity 04. -->
+        <p class="intro-label" style="font-family: 'Courier New', Courier, monospace; color: #994626;">Building software. Securing systems.</p>
+        <p class="intro">I'm a Computer Science and Cybersecurity student at Iowa State University. I work on cloud infrastructure, security automation, and backend systems that turn complex problems into practical solutions.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="./Bhuvish_Mahadeva_Resume.pdf" download>Download resume <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="location">AMES, IOWA <span aria-hidden="true">/</span> IOWA STATE UNIVERSITY</p>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-frame">
+          <div class="portrait-placeholder" aria-hidden="true"><span>BM<span class="accent">.</span></span><small>IDEAS INTO IMPACT</small></div>
+          <!-- Add your photo at images/profile.jpg. The initials remain until it is added. -->
+          <img class="profile-photo" src="./images/profile.jpg" alt="Portrait of Bhuvish Mahadeva" width="800" height="1000" onerror="this.hidden = true;" onload="this.hidden = false;">
+          <span class="portrait-tag">DEVELOPER &amp; SECURITY ENTHUSIAST</span>
+        </div>
+        <figcaption><span class="status-dot" aria-hidden="true"></span> Curious by nature. Technical by training.</figcaption>
+      </figure>
+    </section>
+
+    <div class="education-strip">
+      <div class="container education-content">
+        <p class="eyebrow">THE FOUNDATION</p>
+        <div><strong>Iowa State University</strong><p>B.S. · Computer Science and Cybersecurity</p></div>
+        <div class="education-date"><strong>Expected May 2027</strong><p>GPA 3.4 / 4.0 · Ames, IA</p></div>
+      </div>
+    </div>
+
+    <section id="projects" class="section container" aria-labelledby="projects-heading">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-heading">Built with purpose.</h2></div><p>From detecting real attacks to<br>making everyday work simpler.</p></div>
+      <div class="project-grid">
+        <article class="project">
+          <img src="./images/project1.jpg" alt="AWS honeypot pipeline: Cowrie and OpenCanary send logs through Filebeat to Elasticsearch and Grafana." width="1000" height="640" loading="lazy">
+          <div class="project-body"><p class="project-category">CLOUD SECURITY <span>01</span></p><h3>Honeypot &amp; SIEM on AWS</h3><p>Built an attack-detection pipeline with Cowrie and OpenCanary, shipping logs through Filebeat to Elasticsearch and visualizing activity in Grafana. Mapped findings to MITRE ATT&amp;CK.</p><p class="project-result"><strong>737</strong> real-world attacker events in 4 days</p><ul class="tags" aria-label="Technologies"><li>AWS</li><li>Elasticsearch</li><li>Grafana</li></ul></div>
+        </article>
+        <article class="project">
+          <img src="./images/project2.jpg" alt="SIEM Log Analyzer pipeline: ingest logs, detect threats with nine rules, and stream alerts to a React dashboard." width="1000" height="640" loading="lazy">
+          <div class="project-body"><p class="project-category">SECURITY ENGINEERING <span>02</span></p><h3>SIEM Log Analyzer</h3><p>Built a full-stack SIEM with multi-format log ingestion, rule-based threat detection, anomaly detection, and incident management. WebSockets stream live alerts to a React dashboard.</p><p class="project-result"><strong>9</strong> built-in threat detection rules</p><ul class="tags" aria-label="Technologies"><li>React</li><li>WebSockets</li><li>MITRE ATT&amp;CK</li></ul></div>
+        </article>
+        <article class="project">
+          <img src="./images/project3.jpg" alt="LabFlow workflow: parse a lab manual into structured steps and fill student responses back into documents." width="1000" height="640" loading="lazy">
+          <div class="project-body"><p class="project-category">SOFTWARE DEVELOPMENT <span>03</span></p><h3>LabFlow</h3><p>Developed Java backend services and a SQL schema to turn lab manuals of up to 50 pages into structured steps and fill student responses back into documents. Shipped with a four-person team.</p><p class="project-result"><strong>2nd</strong> overall · COM S 3090, Spring 2026</p><ul class="tags" aria-label="Technologies"><li>Java</li><li>SQL</li><li>Backend development</li></ul></div>
+        </article>
+      </div>
+      <div class="more-projects">
+        <article><p class="eyebrow">ALSO EXPLORED / 04</p><h3>Hospital Network Penetration Test Lab</h3><p>Assessed a lab network with Nmap, Nikto, and Metasploit. Documented vulnerabilities, root causes, and remediation in technical and executive reports.</p></article>
+        <article><p class="eyebrow">ALSO EXPLORED / 05</p><h3>Automated Brand Threat Detection</h3><p>Built a Python system for phishing and look-alike domain detection. Flagged 200+ malicious domains and reduced manual monitoring time by 70%.</p></article>
+      </div>
+      <a class="text-link github-link" href="https://github.com/Bhuvish04">Visit my GitHub <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section id="experience" class="experience-section" aria-labelledby="experience-heading">
+      <div class="container experience-layout">
+        <div><p class="eyebrow">02 / EXPERIENCE</p><h2 id="experience-heading">Learning by<br>doing.</h2><p class="section-intro">Cloud infrastructure, threat detection, and software engineering in practice.</p></div>
+        <div class="experience-list">
+          <article class="experience"><div class="role-heading"><h3>Cloud Analyst Intern</h3><span>May 2026 – Present</span></div><p class="employer">Wellmark Blue Cross Blue Shield <span>· Des Moines, IA</span></p><ul><li>Built reusable Terraform modules for Cisco IOS ACLs and AWS S3 provisioning, saving 4 hours of manual configuration per ACL deployment.</li><li>Automated sensitive-data scrubbing and Cisco configuration uploads to GitHub to improve security and version control.</li></ul></article>
+          <article class="experience"><div class="role-heading"><h3>Cyber Security Analyst Intern</h3><span>May – Aug 2025</span></div><p class="employer">Shadowfax <span>· Bengaluru, India</span></p><ul><li>Built Python threat-detection tools processing 200+ alerts monthly and reducing incident response time by 40%.</li><li>Connected threat intelligence across MISP, PhishTool, Wazuh, and Zeek, and delivered phishing simulations for 250+ employees.</li></ul></article>
+          <article class="experience"><div class="role-heading"><h3>Software Engineer</h3><span>May – Aug 2024</span></div><p class="employer">Iowa State University <span>· Ames, IA</span></p><ul><li>Engineered backend systems for Eaton fire panel servers and analyzed fire safety data using Python.</li><li>Optimized SQL data retrieval by 25% and built Java/JavaFX BIM visualization features that cut simulation time by 30%.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container" aria-labelledby="skills-heading">
+      <div class="section-heading"><div><p class="eyebrow">03 / TOOLKIT</p><h2 id="skills-heading">Tools behind the work.</h2></div></div>
+      <div class="skills-grid">
+        <article><span class="skill-number">01</span><h3>Cloud &amp; infrastructure</h3><p>AWS · Terraform · Azure · GCP · Linux · Ansible · Proxmox · VMware</p></article>
+        <article><span class="skill-number">02</span><h3>Code &amp; data</h3><p>Python · Java · C/C++ · JavaScript · React · HTML/CSS · SQL · Git</p></article>
+        <article><span class="skill-number">03</span><h3>Security &amp; networking</h3><p>Wazuh · Splunk · MISP · Nessus · Wireshark · Zeek · Cisco IOS · Palo Alto Panorama</p></article>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-layout"><div><p class="eyebrow">04 / GET IN TOUCH</p><h2 id="contact-heading">Let's build<br>something useful<span class="accent">.</span></h2><p>Have a project, an opportunity, or an idea to share?<br>I'd love to hear from you.</p></div><div class="contact-links"><a class="email-link" href="mailto:bhuvish@iastate.edu">bhuvish@iastate.edu <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/bhuvish-mahadeva">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/Bhuvish04">GitHub <span aria-hidden="true">↗</span></a><a href="./Bhuvish_Mahadeva_Resume.pdf">View resume <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+  </main>
+  <footer><div class="container footer-content"><p>© 2026 Bhuvish Mahadeva</p><p>Made for SE/COM S 3190 · Activity 04</p><a href="#about">Back to top ↑</a></div></footer>
+</body>
+</html>
